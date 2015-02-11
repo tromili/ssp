@@ -11,22 +11,13 @@ import android.content.Intent;
 
 public class cotizacion extends ActionBarActivity {
 
-    Button salir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cotizacion);
 
-        Button salir = (Button) findViewById(R.id.Salir);
 
-        salir.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), MainActivity.class);
-                startActivityForResult(myIntent, 0);
-            }
-
-        });
     }
 
 

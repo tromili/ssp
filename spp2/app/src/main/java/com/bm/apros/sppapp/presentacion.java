@@ -13,14 +13,13 @@ import android.content.Intent;
 public class presentacion extends ActionBarActivity {
 
     Button saltar;
-    Button salir;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presentacion);
         Button saltar = (Button) findViewById(R.id.btn_saltar);
-        Button salir = (Button) findViewById(R.id.Salir);
 
 
         saltar.setOnClickListener(new View.OnClickListener() {
@@ -31,13 +30,7 @@ public class presentacion extends ActionBarActivity {
 
         });
 
-        salir.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), MainActivity.class);
-                startActivityForResult(myIntent, 0);
-            }
 
-        });
     }
 
 
@@ -58,6 +51,16 @@ public class presentacion extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+
+        if (id == R.id.Salir){
+            new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent myIntent = new Intent(view.getContext(), MainActivity.class);
+                    startActivityForResult(myIntent, 0);
+                }
+            };
+
         }
 
         return super.onOptionsItemSelected(item);
