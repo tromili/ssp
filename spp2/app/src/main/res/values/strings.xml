@@ -2,7 +2,11 @@
 <resources>
 
     <string name="app_name">SPP APP</string>
-    <string name="hello_world">hola mundo</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_saltar">Saltar</string>
+    <string name="btn_regresar">Regresar</string>
+    <string name="title_activity_presentacion">presentacion</string>
+    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
 </resources>
