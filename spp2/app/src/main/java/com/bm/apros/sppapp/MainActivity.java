@@ -1,17 +1,31 @@
 package com.bm.apros.sppapp;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 import android.view.MenuItem;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button login = (Button) findViewById(R.id.btn_login);
+
+        login.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), presentacion.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
     }
 
 
@@ -36,4 +50,6 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
