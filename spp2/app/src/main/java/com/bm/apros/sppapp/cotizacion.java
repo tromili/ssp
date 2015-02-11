@@ -4,9 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.content.Intent;
+import android.widget.TextView;
 
 
 public class cotizacion extends ActionBarActivity {
@@ -18,7 +16,13 @@ public class cotizacion extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cotizacion);
 
+        TextView ShowNameEmail= (TextView) findViewById(R.id.Show_global);
+        final GlobalClass globalVariable =(GlobalClass) getApplicationContext();
+        final String name=globalVariable.getNombre();
+        final String email = globalVariable.getCorreo();
 
+        String showString= "Nomebre: "+name+"/nEmail: "+email;
+        ShowNameEmail.setText(showString);
     }
 
 

@@ -21,6 +21,12 @@
         android:text="@string/btn_salir"
         android:id="@+id/btn_salir"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="ShowThirdActivity"/>
+    <TextView
+        android:id="@+id/Show_global"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
 
 </RelativeLayout>
