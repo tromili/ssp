@@ -6,6 +6,5 @@
     <item android:id="@+id/Salir"
         android:title="@string/Salir"
         android:orderInCategory="100"
-        android:onClick="fun_salir"
         app:showAsAction="never" />
 </menu>
