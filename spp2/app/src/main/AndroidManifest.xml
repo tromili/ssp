@@ -20,6 +20,10 @@
             android:name=".presentacion"
             android:label="@string/title_activity_presentacion" >
         </activity>
+        <activity
+            android:name=".cotizacion"
+            android:label="@string/title_activity_cotizacion" >
+        </activity>
     </application>
 
 </manifest>
