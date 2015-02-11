@@ -33,6 +33,12 @@ public class presentacion extends ActionBarActivity {
 
     }
 
+    public void fun_salir(View view){
+
+            Intent myIntent = new Intent(view.getContext(), MainActivity.class);
+            startActivityForResult(myIntent, 0);
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -52,6 +58,7 @@ public class presentacion extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+
 
 
         return super.onOptionsItemSelected(item);
