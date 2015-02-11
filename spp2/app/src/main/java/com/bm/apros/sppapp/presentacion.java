@@ -59,6 +59,18 @@ public class presentacion extends ActionBarActivity {
             return true;
         }
 
+        if (R.id.Salir == id){
+            new View.OnClickListener() {
+                public void onClick(View view) {
+                    Intent myIntent = new Intent(view.getContext(), MainActivity.class);
+                    startActivityForResult(myIntent, 0);
+                }
+
+            };
+            return true;
+
+        }
+
 
 
         return super.onOptionsItemSelected(item);
