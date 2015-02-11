@@ -20,7 +20,7 @@ public class presentacion extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presentacion);
         Button saltar = (Button) findViewById(R.id.btn_saltar);
-        Button salir = (Button) findViewById(R.id.btn_salir);
+        Button salir = (Button) findViewById(R.id.Salir);
 
 
         saltar.setOnClickListener(new View.OnClickListener() {
