@@ -19,6 +19,10 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         Button login = (Button) findViewById(R.id.btn_login);
 
+        final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
+        globalVariable.setNombre("nombre1");
+        globalVariable.setCorreo("xxx@hotmail.com");
+
         login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), presentacion.class);
@@ -27,8 +31,11 @@ public class MainActivity extends ActionBarActivity {
 
         });
     }
+    public void StarSecondActivity(View v) {
+        Intent i = new Intent(getBaseContext(), presentacion.class);
+        startActivity(i);
 
-
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

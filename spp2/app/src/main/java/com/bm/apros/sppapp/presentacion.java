@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
-
+import android.widget.TextView;
 
 
 public class presentacion extends ActionBarActivity {
@@ -30,23 +30,25 @@ public class presentacion extends ActionBarActivity {
 
         });
 
+        TextView ShowNameEmail= (TextView) findViewById(R.id.Show_global);
+        final GlobalClass globalVariable =(GlobalClass) getApplicationContext();
+        final String name=globalVariable.getNombre();
+        final String email = globalVariable.getCorreo();
+
+        String showString= "Nombre: "+name+"/n Email: "+email;
+        ShowNameEmail.setText(showString);
 
     }
-
-   /* public void fun_salir(View view){
-
-            Intent myIntent = new Intent(view.getContext(), MainActivity.class);
-            startActivityForResult(myIntent, 0);
-
-    }*/
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_presentacion, menu);
         return true;
     }
-
+    public void ShowThirdActivity(View v) {
+        Intent i = new Intent(getBaseContext(), MainActivity.class);
+        startActivity(i);
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
