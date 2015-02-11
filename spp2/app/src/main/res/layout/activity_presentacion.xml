@@ -15,9 +15,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="67dp" />
 
-    <VideoView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/videoView"
-        android:layout_above="@+id/btn_saltar" />
+        android:text="@string/btn_salir"
+        android:id="@+id/btn_salir"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
