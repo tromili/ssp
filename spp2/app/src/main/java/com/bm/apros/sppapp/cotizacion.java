@@ -12,6 +12,7 @@ import android.content.Intent;
 public class cotizacion extends ActionBarActivity {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
