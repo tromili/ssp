@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.widget.TextView;
 
 
+
 public class presentacion extends ActionBarActivity {
 
     Button saltar;
@@ -57,11 +58,11 @@ public class presentacion extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_usuario) {
             return true;
         }
 
-        if (R.id.Salir == id){
+        if (R.id.action_usuario == id){
             new View.OnClickListener() {
                 public void onClick(View view) {
                     Intent myIntent = new Intent(view.getContext(), MainActivity.class);
