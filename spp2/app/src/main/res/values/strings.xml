@@ -8,8 +8,8 @@
     <string name="btn_regresar">Regresar</string>
     <string name="btn_salir">Salir</string>
     <string name="title_activity_presentacion">presentacion</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="usuario">Settings</string>
     <string name="Salir">Salir</string>
     <string name="title_activity_cotizacion">cotizacion</string>
 
