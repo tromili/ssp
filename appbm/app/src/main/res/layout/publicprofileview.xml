@@ -7,9 +7,37 @@
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Presentación"
+        android:text=""
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:id="@+id/textView" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridView1"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:columnWidth="105dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#84CF8E">
+
+    </GridView>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridViewCont"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:columnWidth="105dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#878787"
+        android:layout_below="@+id/gridView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </GridView>
 
 </RelativeLayout>

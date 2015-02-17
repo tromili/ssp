@@ -16,6 +16,7 @@ public class Communityfragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.communityview, container, false);
 
+
         return view;
     }
 }
